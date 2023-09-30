@@ -2,4 +2,20 @@
   display: flex;
   width: 100%;
   justify-content: space-between;
+  align-items: center;
+  background-color: black;
+  padding-left: 10px;
+  position: fixed;
+}
+
+.navbar__button {
+  width: 70px;
+  background-color:brown;
+  height: 40px;
+  border-radius: 15px;
+  text-decoration: none;
+  border-style: none;
+  margin-right: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }

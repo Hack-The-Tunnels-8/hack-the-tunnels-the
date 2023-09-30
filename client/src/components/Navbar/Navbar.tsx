@@ -10,16 +10,19 @@ function Navbar() {
   return (
     <div className="navbar">
       <div className="navbar__logo">
-        <Link to="/">Store Logo</Link>
+        <Link to="/">
+          <img src="./logo.png" alt="Carleton University Logo"></img>
+          {/* For some reason the image is not displayed... */}
+        </Link>
       </div>
       <div className="navbar__account">
         {loggedIn() === false ? (
           <>
-            <button onClick={() => navigate("/sign-up")}>Sign Up</button>
-            <button onClick={() => navigate("/login")}>Login</button>
+            <button className="navbar__button" onClick={() => navigate("/sign-up")}>Sign Up</button>
+            <button className="navbar__button" onClick={() => navigate("/login")}>Login</button>
           </>
         ) : (
-          <button onClick={() => logout()}>Logout</button>
+          <button className="navbar__button" onClick={() => logout()}>Logout</button>
         )}
       </div>
     </div>
