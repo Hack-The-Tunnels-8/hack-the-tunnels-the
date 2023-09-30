@@ -6,7 +6,7 @@ function PageNotFound() {
     <Page>
       <div className="page-not-found">
         <h1>Error 404: Page not found</h1>
-        <img src="./unnamed.jpg" alt="kevin james being smug"></img>
+        <img src="./kevinjames.jpg" alt="kevin james"></img>
       </div>
     </Page>
   );
