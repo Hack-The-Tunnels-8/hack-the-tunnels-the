@@ -8,10 +8,11 @@ function Login() {
   const [message, setMessage] = useState(null);
   const { loggedIn, login } = useAccountContext();
   const navigate = useNavigate();
+  let username, password
 
   const attemptLogin = async () => {
     try {
-      const message = await login("admin@email.com", "password");
+      const message = await login(username, password);
       setMessage(message);
     } catch (error) {
       console.log(error);
@@ -28,8 +29,10 @@ function Login() {
     <Page>
       <div className="login-page">
         <h1>Login</h1>
+        <input type="text" id="email" name="email" onChange={() => {username = this.value}}></input>
+        <input type="text" id="password" name="password" onChange={() => {password = this.value}}></input>
         <button onClick={() => attemptLogin()}>
-          Login (as user set in code)
+          Login
         </button>
         {message && <p>{message}</p>}
       </div>
