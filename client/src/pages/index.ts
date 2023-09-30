@@ -3,5 +3,6 @@ export { CreateProduct } from "./CreateProduct";
 export { Checkout } from "./Checkout";
 export { Home } from "./Home";
 export { Login } from "./Login";
+export { PageNotFound } from "./PageNotFound"
 export { Product } from "./Product";
 export { SignUp } from "./SignUp";
